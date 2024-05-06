@@ -3,11 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Class Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anaheim&family=Bebas+Neue&family=Tenor+Sans&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <h1>Our Class</h1>
+      <h2>Our class of high-performing digital technology students likes to get stuck into any project that takes their fancy.</h2>
+    </header>
 
-    <style></style>
+    <nav>
+      <a href="...">Our Class</a>
+      <a href="...">Student Profiles</a>
+      <a href="...">Our School</a>
+    </nav>
+
+    <main><img src="" /> ALT</main>
+
+    <style>
+      h1 {
+        font-family: "Bebas Neue", sans-serif;
+        color: #ceb3ab;
+      }
+
+      h2 {
+        font-family: "Anaheim", sans-serif;
+        color: #ceb3ab;
+        margin-bottom: 50px;
+        font-size: xx-large;
+      }
+
+      header {
+        background-color: #7a1537;
+        text-align: center;
+        grid-area: h;
+      }
+
+      nav {
+        grid-area: n;
+        background-color: #7a1537;
+        height: 100px;
+        font-family: "Tenor Sans", sans-serif;
+      }
+
+      nav a {
+        color: #1d6a86;
+        background-color: #ceb3ab;
+        text-decoration: none;
+        padding: 12px 12px;
+        border-radius: 17px;
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: x-large;
+      }
+
+      body {
+        display: grid;
+        grid:
+          " h " auto
+          " n " auto
+          " m " auto
+          " f " auto
+          / auto;
+        background-color: #7a1537;
+      }
+
+      img {
+        border-color: #1d6a86;
+        border: 3px 3px;
+      }
+
+      main {
+        background-color: #ceb3ab;
+      }
+    </style>
   </body>
 </html>
