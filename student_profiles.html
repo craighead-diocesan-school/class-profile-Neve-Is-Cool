@@ -21,48 +21,66 @@
     </nav>
 
     <main>
-      <div class="ruòxī-and-priya">
+      <div class="student">
         <img src="ruòxī.jpg" />
-        <p>Ruòxī is a boisterous student who likes to get stuck in with practical work. She’s worked on:</p>
-        <ul>
-          <li>Electric Cars</li>
-          <li>Robotic Arms</li>
-          <li>Sports training systems</li>
-        </ul>
+        <div class="p">
+          <p>Ruòxī is a boisterous student who likes to get stuck in with practical work. She’s worked on:</p>
+          <ul>
+            <li>Electric Cars</li>
+            <li>Robotic Arms</li>
+            <li>Sports training systems</li>
+          </ul>
+        </div>
+      </div>
+      <div class="student">
         <img src="priya.jpg" />
-        <p>Priya loves working with people and visual systems. She’s worked on:</p>
-        <ul>
-          <li>Facial recognition software</li>
-          <li>Self-driving systems</li>
-          <li>Animal classification apps</li>
-        </ul>
+        <div class="p">
+          <p>Priya loves working with people and visual systems. She’s worked on:</p>
+          <ul>
+            <li>Facial recognition software</li>
+            <li>Self-driving systems</li>
+            <li>Animal classification apps</li>
+          </ul>
+        </div>
       </div>
-      <div class="aniyah-and-lucy">
+      <div class="student">
         <img src="aniyah.jpg" />
-        <p>Aniyah is a mathematician through-and-through. She’s worked on:</p>
-        <ul>
-          <li>Algorithm classification</li>
-          <li>Prime number factorisation</li>
-          <li>Computer graphics</li>
-        </ul>
-        <img src="lucy.jpg" />
-        <p>Lucy loves data and getting everything organised. She’s worked on:</p>
-        <ul>
-          <li>Course choice prediction systems</li>
-          <li>Student information systems</li>
-          <li>Long-term extracurricular trends</li>
-        </ul>
+        <div class="p">
+          <p>Aniyah is a mathematician through-and-through. She’s worked on:</p>
+          <ul>
+            <li>Algorithm classification</li>
+            <li>Prime number factorisation</li>
+            <li>Computer graphics</li>
+          </ul>
+        </div>
       </div>
-      <div class="kaiara">
+      <div class="student">
+        <img src="lucy.jpg" />
+        <div class="p">
+          <p>Lucy loves data and getting everything organised. She’s worked on:</p>
+          <ul>
+            <li>Course choice prediction systems</li>
+            <li>Student information systems</li>
+            <li>Long-term extracurricular trends</li>
+          </ul>
+        </div>
+      </div>
+      <div class="student">
         <img src="kaiara.jpg" />
-        <p>Kaiara is a driven entrepreneur and drives app development forward. She’s worked on:</p>
-        <ul>
-          <li>Ecommerce systems</li>
-          <li>Payment handling software</li>
-          <li>Stock management apps</li>
-        </ul>
+        <div class="p">
+          <p>Kaiara is a driven entrepreneur and drives app development forward. She’s worked on:</p>
+          <ul>
+            <li>Ecommerce systems</li>
+            <li>Payment handling software</li>
+            <li>Stock management apps</li>
+          </ul>
+        </div>
       </div>
     </main>
+    <section>
+      <img src="electric-motor.jpg" />
+      <img src="robotic-arm.jpg" />
+    </section>
     <footer>
       <p>&copy;Neve...2024</p>
     </footer>
@@ -113,21 +131,25 @@
           " h  " auto
           " n  " auto
           " m " auto
+          " s " auto
           " f  " auto
           / auto;
         margin: 0px;
       }
 
-      img {
+      .student img {
         border: 10px solid #1d6a86;
         height: 300px;
         margin-left: 50px;
-        grid-area: i;
-        display: flex;
       }
 
       main {
         background-color: #ceb3ab;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
       }
 
       footer {
@@ -143,7 +165,7 @@
         border: 6px solid #1d6a86;
       }
 
-      p {
+      .p {
         color: #1d6a86;
         font-family: "Tenor Sans", sans-serif;
         margin-top: 40px;
@@ -153,23 +175,25 @@
       ul {
         color: #1d6a86;
         font-family: "Tenor Sans", sans-serif;
-        grid-area: u;
+        margin-left: 30px;
       }
 
-      .ruòxī-and-priya {
+      .student {
         display: flex;
-        margin-top: 50px;
-        margin-bottom: 50px;
       }
 
-      .aniyah-and-lucy {
+      section {
         display: flex;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        grid-area: s;
+        background-color: #ceb3ab;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 50px;
       }
 
-      .kaiara {
-        margin-bottom: 50px;
+      section img {
+        height: 480px;
+        border: 5px solid #1d6a86;
       }
     </style>
   </body>
