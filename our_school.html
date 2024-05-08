@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anaheim&family=Bebas+Neue&family=Tenor+Sans&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Our School</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">Our Class</a>
+      <a href="student_profiles.html">Student Profiles</a>
+      <a class="nav_in_use" href="our_school.html">Our School</a>
+    </nav>
+
+    <main>
+      <img src="school-outside.jpg" />
+      <img src="school-inside.jpg" />
+
+      <p>Our school aims to prepare students for a future in an unknown job market, where people skills are as important as tech skills. We give our girls access to the resources they need to explore their world and develop into the people they want to be.</p>
+      <p>Personal drive is celebrated here, and we like to give our students the opportunity to pursue any area that interests them.</p>
+    </main>
+
+    <footer>
+      <p>&copy;Neve...2024</p>
+    </footer>
+
+    <style>
+      h1 {
+        font-family: "Bebas Neue", sans-serif;
+        color: #ceb3ab;
+        font-size: 300px;
+        margin: 0px;
+        font-weight: 400;
+      }
+
+      header {
+        background-color: #7a1537;
+        text-align: center;
+        grid-area: h;
+      }
+
+      nav {
+        grid-area: n;
+        background-color: #7a1537;
+        height: 100px;
+        font-family: "Tenor Sans", sans-serif;
+        text-align: center;
+      }
+
+      nav a {
+        color: #1d6a86;
+        background-color: #ceb3ab;
+        text-decoration: none;
+        padding: 14px 14px;
+        border-radius: 17px;
+        margin-right: 15px;
+        margin-left: 15px;
+        font-size: 25px;
+      }
+
+      body {
+        display: grid;
+        grid:
+          " h " auto
+          " n " auto
+          " m " auto
+          " f " auto
+          / auto;
+        margin: 0px;
+      }
+
+      img {
+        border: 10px solid #1d6a86;
+        height: 300px;
+        margin-left: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+      }
+
+      main {
+        grid-area: m;
+        background-color: #ceb3ab;
+      }
+
+      footer {
+        grid-area: f;
+        background-color: #1d6a86;
+        color: #ceb3ab;
+        text-align: center;
+        font-family: "Tenor Sans", sans-serif;
+        font-size: larger;
+      }
+
+      .nav_in_use {
+        border: 6px solid #1d6a86;
+      }
+
+      p {
+        color: #1d6a86;
+        font-family: "Tenor Sans", sans-serif;
+        text-align: center;
+        margin-left: 75px;
+      }
+    </style>
+  </body>
+</html>
