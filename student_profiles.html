@@ -21,8 +21,38 @@
     </nav>
 
     <main>
-      <img src="ruoxi" />
-      <p>Ruòxī is a boisterous student who likes to get stuck in with practical work. She’s worked on:</p>
+      <div class="ruòxī-and-priya">
+        <img src="ruòxī.jpg" />
+        <p>Ruòxī is a boisterous student who likes to get stuck in with practical work. She’s worked on:</p>
+        <ul>
+          <li>Electric Cars</li>
+          <li>Robotic Arms</li>
+          <li>Sports training systems</li>
+        </ul>
+        <img src="priya.jpg" />
+        <p>Priya loves working with people and visual systems. She’s worked on:</p>
+        <ul>
+          <li>Facial recognition software</li>
+          <li>Self-driving systems</li>
+          <li>Animal classification apps</li>
+        </ul>
+      </div>
+      <div class="aniyah-and-lucy">
+        <img src="aniyah.jpg" />
+        <p>Aniyah is a mathematician through-and-through. She’s worked on:</p>
+        <ul>
+          <li>Algorithm classification</li>
+          <li>Prime number factorisation</li>
+          <li>Computer graphics</li>
+        </ul>
+        <img src="lucy.jpg" />
+        <p>Lucy loves data and getting everything organised. She’s worked on:</p>
+        <ul>
+          <li>Course choice prediction systems</li>
+          <li>Student information systems</li>
+          <li>Long-term extracurricular trends</li>
+        </ul>
+      </div>
     </main>
 
     <footer>
@@ -56,6 +86,7 @@
         background-color: #7a1537;
         height: 100px;
         font-family: "Tenor Sans", sans-serif;
+        text-align: center;
       }
 
       nav a {
@@ -72,10 +103,10 @@
       body {
         display: grid;
         grid:
-          " h " auto
-          " n " auto
+          " h  " auto
+          " n  " auto
           " m " auto
-          " f " auto
+          " f  " auto
           / auto;
         margin: 0px;
       }
@@ -83,12 +114,12 @@
       img {
         border: 10px solid #1d6a86;
         height: 300px;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-left: 50px;
+        grid-area: i;
+        display: flex;
       }
 
       main {
-        grid-area: m;
         background-color: #ceb3ab;
       }
 
@@ -108,6 +139,26 @@
       p {
         color: #1d6a86;
         font-family: "Tenor Sans", sans-serif;
+        margin-top: 40px;
+        margin-left: 30px;
+      }
+
+      ul {
+        color: #1d6a86;
+        font-family: "Tenor Sans", sans-serif;
+        grid-area: u;
+      }
+
+      .ruòxī-and-priya {
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      .aniyah-and-lucy {
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 50px;
       }
     </style>
   </body>
