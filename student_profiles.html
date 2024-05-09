@@ -13,13 +13,11 @@
       <h1>Student Profiles</h1>
       <h2>The girls are in their final year at secondary school and are all working on personal projects that interest them.</h2>
     </header>
-
     <nav>
       <a href="index.html">Our Class</a>
       <a class="nav_in_use" href="student_profiles.html">Student Profiles</a>
       <a href="...">Our School</a>
     </nav>
-
     <main>
       <div class="student">
         <img src="ruòxī.jpg" />
@@ -194,6 +192,50 @@
       section img {
         height: 480px;
         border: 5px solid #1d6a86;
+      }
+
+      @media screen and (max-width: 1000px) {
+        body {
+          display: grid;
+          grid:
+            " h " auto
+            " n " auto
+            " m " auto
+            " s " auto
+            " f " auto
+            / auto;
+        }
+
+        h1 {
+          font-size: 100px;
+        }
+
+        h2 {
+          font-size: 24px;
+          margin-bottom: 40px;
+        }
+
+        nav a {
+          padding: 10px 10px;
+          margin-right: 5px;
+          margin-left: 5px;
+          font-size: 20px;
+        }
+
+        nav {
+          height: 75px;
+        }
+        .nav_in_use {
+          border: 3px solid #1d6a86;
+        }
+
+        section img {
+          height: 186px;
+        }
+
+        main {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
   </body>

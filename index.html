@@ -105,6 +105,47 @@
       .nav_in_use {
         border: 6px solid #1d6a86;
       }
+
+      @media screen and (max-width: 1000px) {
+        body {
+          display: grid;
+          grid:
+            " h " auto
+            " n " auto
+            " m " auto
+            " f " auto
+            / auto;
+        }
+
+        h1 {
+          font-size: 100px;
+        }
+
+        h2 {
+          font-size: 24px;
+          margin-bottom: 40px;
+        }
+
+        img {
+          border: 10px solid #1d6a86;
+          height: 350px;
+        }
+
+        nav a {
+          padding: 10px 10px;
+          margin-right: 5px;
+          margin-left: 5px;
+          font-size: 20px;
+        }
+
+        nav {
+          height: 75px;
+        }
+
+        .nav_in_use {
+          border: 3px solid #1d6a86;
+        }
+      }
     </style>
   </body>
 </html>
