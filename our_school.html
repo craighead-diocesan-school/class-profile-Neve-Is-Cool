@@ -12,25 +12,24 @@
     <header>
       <h1>Our School</h1>
     </header>
-
     <nav>
       <a href="index.html">Our Class</a>
       <a href="student_profiles.html">Student Profiles</a>
       <a class="nav_in_use" href="our_school.html">Our School</a>
     </nav>
-
-    <main>
+    <section>
       <img src="school-outside.jpg" />
       <img src="school-inside.jpg" />
-
-      <p>Our school aims to prepare students for a future in an unknown job market, where people skills are as important as tech skills. We give our girls access to the resources they need to explore their world and develop into the people they want to be.</p>
-      <p>Personal drive is celebrated here, and we like to give our students the opportunity to pursue any area that interests them.</p>
+    </section>
+    <main>
+      <div class="p">
+        <p>Our school aims to prepare students for a future in an unknown job market, where people skills are as important as tech skills. We give our girls access to the resources they need to explore their world and develop into the people they want to be.</p>
+        <p>Personal drive is celebrated here, and we like to give our students the opportunity to pursue any area that interests them.</p>
+      </div>
     </main>
-
     <footer>
       <p>&copy;Neve...2024</p>
     </footer>
-
     <style>
       h1 {
         font-family: "Bebas Neue", sans-serif;
@@ -70,24 +69,17 @@
         grid:
           " h " auto
           " n " auto
+          " s " auto
           " m " auto
           " f " auto
           / auto;
         margin: 0px;
       }
 
-      img {
-        border: 10px solid #1d6a86;
-        height: 300px;
-        margin-left: 30px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        display: flex;
-      }
-
       main {
         grid-area: m;
         background-color: #ceb3ab;
+        padding-bottom: 50px;
       }
 
       footer {
@@ -103,11 +95,26 @@
         border: 6px solid #1d6a86;
       }
 
-      p {
+      .p {
         color: #1d6a86;
         font-family: "Tenor Sans", sans-serif;
         text-align: center;
         margin-left: 75px;
+        font-size: large;
+      }
+
+      section img {
+        border: 5px solid #1d6a86;
+        height: 450px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      section {
+        grid-area: s;
+        background-color: #ceb3ab;
+        display: flex;
+        justify-content: center;
       }
     </style>
   </body>
